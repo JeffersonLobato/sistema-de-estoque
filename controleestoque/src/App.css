@@ -1,0 +1,1359 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+/*ESTILO DO HEADER (MENU)*/
+
+header{
+    display: inline-block;
+    width: 100vw;
+    height: 15vh;
+    background-color: blue;
+    background-image: linear-gradient(to top, rgb(0,0,255), rgb(0,0,170) 100%);
+}
+
+.center-menu{
+    display: flex;
+    width: 80%;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-header{
+    display: flex;
+    width: 50%;
+    
+}
+
+.header-li{
+
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 5vh;
+    font-size: 25px;
+    color: white;
+}
+
+.header-li:hover{
+    color: rgb(220,220,220); 
+}
+
+.header-espaco-menu{
+    padding-left: 45px;
+}
+
+
+.button-sair{
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 30vw;
+    margin-top: 5vh;
+    font-size: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+    background-color: rgb(198, 238, 255);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.menu-admin{
+    display: block;
+}
+
+nav button:hover{
+    background-color: rgb(170, 169, 216);
+}
+
+/* MENUS FLUTUANTES */
+
+.menu-header-list-flutuante{
+    z-index: 999;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+
+.menu-list-flutuante{
+    
+    text-align: center;
+    color: black;
+    width: 130px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid rgb(180,180,180);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.menu-list-flutuante:hover{
+    background-color: rgb(220,220,220);
+}
+
+.menu-flutuante-adm{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    margin-left: 45px;
+}
+
+.menu-flutuante-gerenciar{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-flutuante-gerenciar-div:hover .menu-flutuante-gerenciar{
+    display: block;
+}
+
+.menu-flutuante-adm-div:hover .menu-flutuante-adm{
+    display: block;
+}
+
+.menu-flutuante-adm-div{
+    display: none;
+}
+
+
+/*ESTILO DO HOME*/
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255,255,255);
+}
+
+.center-home{
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.center-home h1{
+
+    padding-top: 25vh;
+    font-size: 30px;
+
+}
+
+/*ESTILO DA PÁGINA INCLUIR (MENU)*/
+
+.incluir{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255,255,255);
+    background-image: linear-gradient(to top, rgb(255,255,255), rgb(240,240,240) 100%);
+}
+
+.center-incluir{
+    width: 80vw;
+    height: 85vh;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    border: 1px solid rgb(150,150,150);
+    background-color: rgb(240,240,240);
+}
+
+.div-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+
+.primeira-div-input{
+    margin-top: 20px;
+}
+
+.div-input label{
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+
+.form-incluir{
+    outline: none;
+    font-size: 15px;
+    border: 0.5px solid rgb(220,220,220);
+    border-radius: 8px;
+    width: 100%;
+    height: 38px;
+    padding: 5px;
+}
+
+.separador-esq{
+    width: 18%;
+}
+
+.separador-dir{
+    width: 70%;
+}
+
+.button-cadastrar{
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 3%;
+    padding: 10px;
+    font-size: 20px;
+    border: 0;
+    background-color:rgb(152, 200, 221);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.button-cadastrar:hover{
+    background-color: rgb(198, 238, 255);
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+
+/*ESTILO DA PÁGINA CONSULTA*/
+
+
+.consulta{
+    display: flex;
+    width: 80vw;
+    min-height: 85vh;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to top, rgb(255,255,255), rgb(240,240,240) 100%);
+}
+
+.erro-validacao{
+    color: rgb(200, 19, 19);
+    font-weight: bolder;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(56, 182, 204); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(55, 33, 153); 
+  }
+
+
+.consulta-linha-individual{
+    background-color: rgb(162, 236, 255);
+    position: fixed;
+    width: inherit;
+    height: 65px;
+    margin-right: 6px;
+    margin-top: 90px;
+}
+
+.busca-item{
+    position: fixed;
+    width: inherit;
+    height: 90px;
+    background-color: rgb(162, 236, 255);
+    text-align: center;
+}
+
+.label-input-busca-item{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.input-busca-item{
+    margin-top: 30px;
+    height: 30px;
+    width: 300px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(180,180,180);
+    padding: 8px;
+    font-size: 15px;
+}
+
+.input-busca{
+
+    margin-top: 20px;
+    width: 80%;
+    outline: none;
+    border: 1.5px solid rgb(220,220,220);
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.consulta-linha{
+    display: flex;
+    width: inherit;
+}
+
+.linhas-itens{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: inherit;
+    margin-top: 155px;
+}
+
+
+.consultaFicha, .consultaSetor, .consultaDescricao, .consultaQuantidade, .consultaData, .consultaMediaRetirada, .consultaEditar{
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid rgb(220,220,220);
+}
+
+.indice-coluna-consulta{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.consultaFicha{
+    width: 12%;
+}
+.consultaSetor{
+    width: 14%;
+}
+.consultaDescricao{
+    width: 30%;
+}
+.consultaQuantidade{
+    width: 10%;
+}
+.consultaData{
+    width: 15%;
+}
+.consultaMediaRetirada{
+    width: 15%;
+}
+
+.consultaEditar{
+    width: 20%;
+}
+
+.logo-editar{
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 1px solid rgb(170,170,170);
+    border-radius: 5px;
+}
+
+/* JANELA DE CONFIRMAÇÃO DE EXCLUSÃO DE ITEM */
+
+.excluirItem{
+    position: absolute;
+    border: 1px solid rgb(9, 9, 105);
+    border-radius: 8px;
+    width: 46vw;
+    height: 35vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 110, 179);
+    -webkit-box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67); 
+    box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67);
+    background-image: linear-gradient(to top, rgb(92, 108, 255), rgb(9, 143, 253) 100%);
+}
+
+.fundo-janela-excluirItem{
+
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+.botoes-excluir{
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao-cancelar, .botao-excluir{
+
+    cursor: pointer;
+    width: 22%;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 8px;
+    background-color: rgb(188, 218, 231);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.botoes-excluir button:hover{
+    background-color: rgb(60, 219, 240);
+}
+
+.excluirItem h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.excluirItem h3{
+    text-align: center;
+    margin-top:20px;
+    color: red;
+    font-size: 25px;
+}
+
+
+/*JANELA DE OPÇÃO DE EDIÇÃO*/
+
+.opcao-edicao{
+    position: fixed;
+    border: 1px solid rgb(9, 9, 105);
+    border-radius: 8px;
+    width: 50vw;
+    height: 40vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 110, 179);
+    -webkit-box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67); 
+    box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67);
+    background-image: linear-gradient(to top, rgb(92, 108, 255), rgb(9, 143, 253) 100%);
+}
+
+.fechar{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(139, 195, 240);
+    border-radius: 15px;
+    background-color: rgb(0, 0, 5);
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: -10px;
+    margin-top: -10px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+
+}
+
+.fechar:hover{
+    background-color: silver;
+    color: black;
+}
+
+.center-button{
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.opcao-edicao button{
+    cursor: pointer;
+    width: 30%;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 8px;
+    background-color: rgb(188, 218, 231);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.opcao-edicao button:hover{
+    background-color: rgb(60, 219, 240);
+}
+
+.fundo-janela-opcao-edicao{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* JANELA DE EDIÇÃO */
+
+.fundo-janela-editar{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.titulo-janela-edicao{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.janela-edicao{
+    position: fixed;
+    border: 1px solid rgb(9, 9, 105);
+    border-radius: 8px;
+    width: 60vw;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 110, 179);
+    -webkit-box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67); 
+    box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67);
+    background-image: linear-gradient(to top, rgb(92, 108, 255), rgb(9, 143, 253) 100%);
+}
+
+.label-janela-edicao{
+    color: white;
+    font-size: 18px !important;
+    font-weight: bolder;
+}
+
+.salvar-edicao{
+    cursor: pointer;
+    width: 30%;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 8px;
+    background-color: rgb(188, 218, 231);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.salvar-edicao:hover{
+    background-color: rgb(60, 219, 240);
+}
+
+.center-button-salvar{
+    position: absolute;
+    text-align: center;
+    top: 75%;
+    width: 100%;
+}
+
+
+
+/* JANELA DE RETIRADA DE ITENS */
+
+.fundo-janela-retirar{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.janela-retirada{
+    position: fixed;
+    border: 1px solid rgb(9, 9, 105);
+    border-radius: 8px;
+    width: 60vw;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 110, 179);
+    -webkit-box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67); 
+    box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67);
+    background-image: linear-gradient(to top, rgb(92, 108, 255), rgb(9, 143, 253) 100%);
+}
+
+.descricao-item-retirada{
+    text-align: justify;
+    color:yellow;
+    font-size: 20px;
+}
+
+
+
+/* JANELA DE ENTRADA DE ITENS */
+
+.fundo-janela-entrada{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.janela-entrada{
+    position: fixed;
+    border: 1px solid rgb(9, 9, 105);
+    border-radius: 8px;
+    width: 60vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 110, 179);
+    -webkit-box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67); 
+    box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67);
+    background-image: linear-gradient(to top, rgb(92, 108, 255), rgb(9, 143, 253) 100%);
+}
+
+
+.center-button-entrada{
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    width: 100%;
+}
+
+
+/* Cadastro de Usuários */
+
+.titulo-cadastro-usuario{
+    text-align: center;
+    margin: 20px;
+}
+
+.cadastro-usuario{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255,255,255);
+    background-image: linear-gradient(to top, rgb(255,255,255), rgb(240,240,240) 100%);
+}
+
+.center-cadastro-usuario{
+    width: 80vw;
+    height: 70vh;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    border: 1px solid rgb(150,150,150);
+    background-color: rgb(240,240,240);
+}
+
+
+
+.form-cadastro-usuario{
+    outline: none;
+    font-size: 15px;
+    border: 0.5px solid rgb(220,220,220);
+    border-radius: 8px;
+    width: 100%;
+    height: 38px;
+    padding: 5px;
+}
+
+
+/* CONSULTA USUÁRIOS (ADM)*/
+
+.consulta-usuarios{
+    display: flex;
+    width: 80vw;
+    min-height: 70vh;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to top, rgb(255,255,255), rgb(240,240,240) 100%);
+}
+
+.buscar-usuario{
+    position: fixed;
+    width: inherit;
+    height: 90px;
+    background-color: rgb(162, 236, 255);
+    text-align: center;
+}
+
+
+.consulta-linha-individual-usuario{
+    background-color: rgb(162, 236, 255);
+    position: fixed;
+    width: inherit;
+    height: 60px;
+    margin-right: 6px;
+    margin-top: 90px;
+}
+
+
+.consulta-linha-usuario{
+    display: flex;
+    width: inherit;
+}
+
+.linhas-usuarios{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: inherit;
+    margin-top: 140px;
+}
+
+
+.consulta-post-grad, .consulta-perfil, .consulta-nome, .consulta-login, .consulta-editar-usuario{
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid rgb(220,220,220);
+}
+
+.indice-coluna-consulta{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.consulta-post-grad{
+    width: 20%;
+}
+.consulta-perfil{
+    width: 20%;
+}
+.consulta-nome{
+    width: 20%;
+}
+.consulta-login{
+    width: 20%;
+}
+
+.consulta-editar-usuario{
+    width: 20%;
+}
+
+.botao-editar-usuario{
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 1px solid rgb(170,170,170);
+    border-radius: 5px;
+}
+
+.excluir-usuario{
+    margin-left: 4px;
+    background-color: red;
+    color: white;
+    border: 1px solid rgb(170,170,170);
+    border-radius: 5px;
+}
+
+
+/* JANELA DE EDIÇÃO DE USUÁRIOS*/
+
+.fundo-janela-editar-usuario{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.janela-edicao-usuario{
+    position: fixed;
+    border: 1px solid rgb(9, 9, 105);
+    border-radius: 8px;
+    width: 60vw;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 110, 179);
+    -webkit-box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67); 
+    box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67);
+    background-image: linear-gradient(to top, rgb(92, 108, 255), rgb(9, 143, 253) 100%);
+}
+
+.label-janela-edicao-usuario{
+    color: white;
+    font-size: 18px !important;
+    font-weight: bolder;
+}
+
+.salvar-edicao-usuario{
+    cursor: pointer;
+    width: 30%;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 8px;
+    background-color: rgb(188, 218, 231);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.salvar-edicao-usuario:hover{
+    background-color: rgb(60, 219, 240);
+}
+
+.center-button-salvar-usuario{
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    width: 100%;
+}
+
+.primeira-opcao-usuario{
+    margin-top: 25px;
+}
+
+
+/* JANELA DE CONFIRMAÇÃO DE EXCLUSÃO DE USUÁRIO */
+
+.excluirUser{
+    position: absolute;
+    border: 1px solid rgb(9, 9, 105);
+    border-radius: 8px;
+    width: 46vw;
+    height: 35vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 110, 179);
+    -webkit-box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67); 
+    box-shadow: 2px 5px 30px 4px rgba(0,0,0,0.67);
+    background-image: linear-gradient(to top, rgb(92, 108, 255), rgb(9, 143, 253) 100%);
+}
+
+.fundo-janela-excluirUser{
+
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+.excluirUser h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.excluirUser h3{
+    text-align: center;
+    margin-top:20px;
+    color: red;
+    font-size: 25px;
+}
+
+
+/* TROCA DE SENHA DO USUÁRIO */
+
+.trocar-senha{
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(255,255,255);
+    background-image: linear-gradient(to top, rgb(255,255,255), rgb(240,240,240) 100%);
+}
+
+.center-trocar-senha{
+    width: 60%;
+    height: 70vh;
+    margin: 50px auto 50px auto;
+    padding: 50px;
+    border: 1px solid rgb(150,150,150);
+    background-color: rgb(240,240,240);
+    font-size: 20px;
+}
+
+.center-trocar-senha p{
+    margin-bottom: 25px;
+    color: red;
+    text-align: justify;
+}
+
+.inputs-trocas-senhas{
+    display: flex;
+    margin-top: 10px;
+}
+
+.separador-direito{
+    width: 70%;
+}
+
+.separador-esquerdo{
+    width: 30%;
+}
+
+.input-trocar-senha{
+    width: 70%;
+    height: 30px;
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid rgb(180,180,180);
+    border-radius: 5px;
+    outline: none;
+}
+
+.center-trocar-senha-button{
+    text-align: center;
+    
+}
+
+.trocar-senha-button{
+    cursor: pointer;
+    width: 100px;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid rgb(170, 170, 170);
+    background-color:rgb(152, 200, 221);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.trocar-senha-button:hover{
+    background-color: rgb(198, 238, 255);
+
+}
+
+
+/* LOGIN E SENHA */
+
+.pagina-login{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(18, 53, 248);
+    background-image: linear-gradient(to top, rgb(0, 0, 255), rgb(10, 138, 243) 100%);
+}
+
+.titulo-login{
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.area-login{
+    width: 35vw;
+    height: 40vh;
+    border-radius: 8px;
+    border: 1px solid rgb(60, 159, 240);
+    background-color: rgb(4, 119, 139);
+    margin: auto;
+    margin-top: 10vh;
+}
+
+
+.inputs-login{
+    display: flex;
+    margin-top: 15px;
+}
+
+.separador-direito-log-pass{
+    width: 70%;
+    text-align: center;
+}
+
+.separador-esquerdo-log-pass{
+    width: 30%;
+    text-align: center;
+}
+
+.label-login{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.input-login-senha{
+    width: 80%;
+    height: 30px;
+    border: 1px solid rgb(180,180,180);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.primeiro-el-login{
+    margin-top: 60px;
+}
+
+.center-button-login{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button-login{
+    cursor: pointer;
+    width: 100px;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid rgb(170, 170, 170);
+    background-color:rgb(152, 200, 221);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+
+}
+
+.button-login:hover{
+    background-color: rgb(198, 238, 255);
+
+}
+
+.senha-invalida{
+    display: none;
+    color: rgb(240, 22, 22);
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: yellow;
+}
+
+/* RELATÓRIOS */
+
+.relatorios{
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(255,255,255);
+    background-image: linear-gradient(to top, rgb(255,255,255), rgb(240,240,240) 100%);
+}
+
+.center-relatorios{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 85vh;
+    margin: auto;
+}
+
+.divisoria1{
+    display: flex;
+    margin-top: 25px;
+}
+
+.divisoria2{
+    display: none;
+    margin-top: 20px;
+
+}
+
+.quadro-relatorio{
+    margin: 10px 10px;
+    width: 35vw;
+    height: 50vh;
+    border: 1px solid rgb(180,180,180);
+    -webkit-box-shadow: 1px 4px 16px 1px rgba(0,0,0,0.4); 
+    box-shadow: 1px 4px 16px 1px rgba(0,0,0,0.4);
+    transition: 0.5s;
+}
+
+
+.bloco-relatorio{
+    display: none;
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.canvas-grafico{
+    display: none;
+    width: 65%;
+    height: 55%;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 80px;
+
+}
+
+.fechar-relatorio{
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(139, 195, 240);
+    border-radius: 15px;
+    background-color: rgb(0, 0, 5);
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: -10px;
+    margin-top: -10px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+
+}
+
+.fechar-relatorio:hover{
+    background-color: silver;
+    color: black;
+}
+
+.relatorio-lista{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.rel{
+    border: 1px solid rgb(180,180,180);
+    text-align: center;
+}
+
+.rel-ind{
+    font-weight: bolder;
+    background-color: rgb(200,200,200);
+    -webkit-print-color-adjust: exact;
+}
+
+.rel-ord{
+    width: 7%;
+}
+
+.rel-ficha{
+    width: 7%;
+}
+
+.rel-setor{
+    width: 17%;
+}
+
+.rel-descricao{
+    width: 34%;
+}
+
+.rel-quantidade{
+    width: 15%;
+}
+
+.rel-data{
+    width: 20%;
+}
+
+.rel-retmensal{
+    width: 5%;
+}
+
+.rel-descricaoEstimativa{
+    width: 40%;
+}
+
+.rel-quantidadeEstimativa{
+    width: 10%;
+}
+
+.rel-dias{
+    width: 19%;
+}
+
+.titulo-rel{
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.imprimir-rel{
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.botao-imprimir{
+
+    cursor: pointer;
+    width: 10%;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 8px;
+    background-color: rgb(188, 218, 231);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.botao-imprimir{
+    background-color: rgb(60, 219, 240);
+}
+
+#canvas-relatorio1 .aumentar-janela{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/relatorio1.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#canvas-relatorio2 .aumentar-janela{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/relatorio2.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#canvas-relatorio3 .aumentar-janela{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/relatorio3.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.aumentar-janela:hover{
+    opacity: 0.5;
+}
+
+.selecionar-secao{
+    display: flex;
+}
+
+.select-relatorio{
+    display: none;
+    margin-left: auto;
+    width: 200px;
+    outline: none;
+
+}
+
+.botao-select-relatorio{
+    cursor: pointer;
+    display: none;
+    margin-right: auto;
+    margin-left: 10px;
+    width: 50px;
+
+}
+
+
+/* JANELA DE IMPRESSÃO */
+
+@media print{
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    .header, .center-menu, .menu-header, .header-li, .header-li, .header-espaco-menu, .button-sair, .menu-admin{
+        display: none;
+    }
+
+    .relatorios{
+        min-width: 100%;
+        min-height: 100vh;
+    }
+
+
+    #canvas-relatorio1, #canvas-relatorio2, #canvas-relatorio3{
+        position: relative !important;
+        margin-left: -85px;
+        min-width: 100%;
+        min-height: 100%;
+        border: 0px solid rgb(180,180,180);
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4); 
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4);
+        background-size: 0;
+        -webkit-print-color-adjust: exact;
+
+    }
+
+    .bloco-relatorio{
+        position: relative;
+        margin: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .center-relatorios{
+        position: relative;
+        min-width: 100%;
+        min-height: 100vh;
+        margin-top: 0;
+    }
+    
+    .divisoria1{
+        margin: 0;
+    }
+    
+    .divisoria2{
+        margin: 0;
+    
+    }
+
+    .botao-imprimir{
+        display: none;
+    }
+
+    .fechar-relatorio{
+        display: none !important;
+    }
+
+    #fundo-relatorios{
+        display: none;
+    }
+
+    .select-relatorio{
+        display: none !important;
+    }
+    
+    .botao-select-relatorio{
+
+        display: none !important;
+    }
+
+
+
+}
