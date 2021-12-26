@@ -1,43 +1,47 @@
-O Sistema de controle de estoque foi feito para suprir a necessidade de um determinado local,
-porém pode ser adaptado a sua situação.
+<h1>Sistema de controle de estoque</h1>
 
-Backend em Python com DJANGO e DJANGO RESTFRAMEWORKING
+<p>O Sistema de controle de estoque foi feito para suprir a necessidade de um determinado local,
+porém pode ser adaptado a outras situações.</p>
 
-Frontend em React.JS
+<p>Possui vídeo demonstrativo ao final desse readme.</p>
 
-Código ainda não refatorado
+<p>Backend em Python com DJANGO e DJANGO RESTFRAMEWORKING.</p>
 
-Os campos das tabelas podem ser trocados de acordo com a necessidade direto nos models criados no DJANGO
+<p>Frontend em React.JS.</p>
 
-Atente para o seguinte, alguns campos são preenchidos automaticamente de acordo com as funções dentro das Views
+<p>Código ainda não refatorado.</p>
 
-O Campo retmensal corresponde a Retirada Mensal de material do estoque, no cadastro inicial do item, esse campo
+<p>Os campos das tabelas podem ser trocados de acordo com a necessidade direto nos models criados no DJANGO.</p>
+
+<p>Atente para o seguinte, alguns campos são preenchidos automaticamente de acordo com as funções dentro das Views.</p>
+
+<p>O Campo retmensal corresponde a Retirada Mensal de material do estoque, no cadastro inicial do item, esse campo
 é preenchido pelo usuário do sistema, contudo, após 90 dias de registros, ele é preenchido com base na média
-de saídas de itens por mês.
+de saídas de itens por mês.</p>
 
-O campo Ficha, corresponde a um número único do item, como um id, cada item tem seu número de ficha exclusivo
+<p>O campo Ficha, corresponde a um número único do item, como um id, cada item tem seu número de ficha exclusivo.</p>
 
-A soma e retirada de itens, é feita no frontend, mas isso pode ser alterado, se o sistema for usado em grande escala,
-com vários usuários simultâneos, o ideal é que o cálculo de saída e entrada de material sejam feitos no backend.
+<p>A soma e retirada de itens, é feita no frontend, mas isso pode ser alterado, se o sistema for usado em grande escala,
+com vários usuários simultâneos, o ideal é que o cálculo de saída e entrada de material sejam feitos no backend.</p>
 
 ******************************************************
 
-API - Controle de Estoque
+<p>API - Controle de Estoque</p>
 
-A API foi feita em DJANGO, para utilizalá-la,
-deverá instalar o DJANGO (sugiro dentro de uma VENV)
+<p>A API foi feita em DJANGO, para utilizalá-la,
+deverá instalar o DJANGO (sugiro dentro de uma VENV).</p>
 
-Crie um banco de dados MYSQL
+<p>Crie um banco de dados MYSQL.</p>
 
-Altere as informações do banco de dados no arquivo settings.py
-no DJANGO
+<p>Altere as informações do banco de dados no arquivo settings.py
+no DJANGO.</p>
 
-Faça as migrations
+<p>Faça as migrations</p>
 
 
-********** COMO UTILIZAR A API ***********************
+<h3>********** COMO UTILIZAR A API ***********************</h3>
 
-Consultar Recursos
+<h4>Consultar Recursos</h4>
 
 -> Para conseguir um token
 
@@ -55,14 +59,14 @@ Ex.:
 Authorization: Token 995959595sadasdasd959595as9das95959
 
 
-Ob.: Para fins de segurança, apesar de que o ideal é trafegar
+<p>Obs.: Para fins de segurança, apesar de que o ideal é trafegar
 os dados via https, coloquei no front-end, tanto para criar um novo usuário,
 quanto para fazer login, uma conversão do texto claro para sha-256, então
 a senha criada pelo painel administrador do Django será diferente da senha
 criada pelo Adm do front, fiz isso, pois para o caso específico em que eu 
 estava trabalhando, essa era a melhor solução. Contudo, é necessário ter dois
 perfis de Adm, um do administrador Django (superuser) criado no terminal e
-outro no frontend para fins de criação e controle de novos usuários.
+outro no frontend para fins de criação e controle de novos usuários.</p>
 
 -> Pegar todos os elementos de uma
 tabela do banco de dados:
@@ -156,3 +160,8 @@ mas não todos
 	quantidade
 	data
 	retmensal
+
+
+<h3>Segue um vídeo explicativo sobre o projeto:</h3>
+
+[![Alt text](https://img.youtube.com/vi/0nkebcUJhKs/0.jpg)](https://www.youtube.com/watch?v=0nkebcUJhKs)
